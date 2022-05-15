@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&family=Lobster&display=swap');
+:root {
+    --Playfair: 'Playfair Display', serif;
+    --Quicksand: 'Quicksand', sans-serif;
+    --Roboto: 'Roboto', sans-serif;
+    --primary-color: #3c393d;
+    --secondary-color: #2b2b2b;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--Quicksand);
+    line-height: 1.4;
+    color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+}
+
+
+/* header */
+
+header {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://decoxdesign.com/upload/images/do-handmade-trang-tri-ban-lam-viec-08-decox-design.jpg) center/cover no-repeat fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1.2rem;
+    text-align: center;
+}
+
+.navbar-slogan {
+    color: #fff;
+    font-size: 3rem;
+    display: block;
+    text-decoration: none;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 1.5px;
+}
+
+.navbar-menu a {
+    text-transform: uppercase;
+    font-family: var(--Roboto);
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 2rem 1rem;
+    transition: opacity 0.3s ease;
+}
+
+.navbar-menu a:hover {
+    opacity: 0.5;
+    text-decoration: underline;
+    text-decoration-style: double;
+}
+
+.banner {
+    flex: 1 1 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.banner-title {
+    font-size: 2rem;
+    font-family: var(--Playfair);
+}
+
+.banner-title span {
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+    color: var(--secondary-color);
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: solid var(--secondary-color) 3px;
+    border-radius: 100%;
+}
+
+.banner p {
+    padding: 1rem 0 0.5rem 0;
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-family: var(--Roboto);
+    font-weight: 300;
+    word-spacing: 1rem;
+}
+
+.banner form {
+    background: transparent;
+    border: solid var(--secondary-color) 2.4px;
+    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner form:hover {
+    border: solid #fff 3px;
+}
+
+.search-input {
+    font-family: var(--Roboto);
+    font-size: 1.1rem;
+    width: 100%;
+    background: transparent;
+    outline: 0;
+    padding: 0.6rem 0;
+    border: none;
+}
+
+.search-input::placeholder {
+    text-transform: capitalize;
+    color: #ccc;
+}
+
+.search-btn {
+    width: 40px;
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    border: none;
+    background: transparent;
+    outline: 0;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    color: #fff;
+}

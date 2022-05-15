@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&family=Lobster&display=swap');
+:root {
+    --Playfair: 'Playfair Display', serif;
+    --Quicksand: 'Quicksand', sans-serif;
+    --Roboto: 'Roboto', sans-serif;
+    --primary-color: #3c393d;
+    --secondary-color: #2b2b2b;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--Quicksand);
+    line-height: 1.4;
+    color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+}
+
+
+/* header */
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1.2rem;
+    text-align: center;
+}
+
+.navbar-slogan {
+    color: #fff;
+    font-size: 3rem;
+    display: block;
+    text-decoration: none;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 1.5px;
+}
+
+.navbar-menu a {
+    text-transform: uppercase;
+    font-family: var(--Roboto);
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 2rem 1rem;
+    transition: opacity 0.3s ease;
+}
+
+.navbar-menu a:hover {
+    opacity: 0.5;
+    text-decoration: underline;
+    text-decoration-style: double;
+}
+
+
+/* about */
+
+.about-content .container {
+    margin: 2rem;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    border: solid var(--secondary-color) 2px;
+    border-radius: 4px;
+}
